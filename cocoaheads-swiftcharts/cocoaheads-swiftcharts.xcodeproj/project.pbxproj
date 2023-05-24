@@ -14,6 +14,7 @@
 		845551622A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845551612A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift */; };
 		8455516C2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455516B2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift */; };
 		8455516E2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455516D2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift */; };
+		D4C987692A1E6CA500677DF8 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C987682A1E6CA500677DF8 /* ChartData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		845551672A1DE27000C811BC /* cocoaheads-swiftchartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cocoaheads-swiftchartsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8455516B2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsUITests.swift; sourceTree = "<group>"; };
 		8455516D2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4C987682A1E6CA500677DF8 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				845551532A1DE27000C811BC /* Assets.xcassets */,
 				845551552A1DE27000C811BC /* cocoaheads_swiftcharts.entitlements */,
 				845551562A1DE27000C811BC /* Preview Content */,
+				D4C987682A1E6CA500677DF8 /* ChartData.swift */,
 			);
 			path = "cocoaheads-swiftcharts";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845551522A1DE26C00C811BC /* ContentView.swift in Sources */,
+				D4C987692A1E6CA500677DF8 /* ChartData.swift in Sources */,
 				845551502A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
