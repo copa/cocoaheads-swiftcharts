@@ -42,6 +42,11 @@ enum ChartData {
         (date: date(year: 2023, month: 10, day: 11), attendees: 177, withPizza: false),
         (date: date(year: 2023, month: 11, day: 18), attendees: 155, withPizza: true)
     ].map { ChartDataEntry(date: $0.date, attendees: $0.attendees, withPizza: $0.withPizza) }
+    
+    static let series = [
+        (city: "Aachen", data: aachen),
+        (city: "Cologne", data: cologne)
+    ]
 }
 
 

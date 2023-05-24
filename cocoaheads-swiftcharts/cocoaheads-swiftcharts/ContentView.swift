@@ -10,15 +10,30 @@ import SwiftUI
 
 
 struct ContentView: View {
-    var aachenData = ChartData.Aachen
-
     var body: some View {
-        Chart {
-            points
+        VStack{
+            GroupBox("Aachen") {
+                Chart {
+                    barMark
+                    lineMark
+                    pointMark
+                }
+            }.frame(height: 350)
+            
+            GroupBox("Series") {
+                Chart {
+                    series
+                }
+            }.frame(height: 350)
+                .chartXAxis {
+                    AxisMarks(values: .stride(by: .month)) { _ in
+                        AxisTick()
+                        AxisGridLine()
+                        AxisValueLabel(format: .dateTime.month(.abbreviated), centered: true)
+                    }
+                }
         }
-        .padding()
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -26,18 +41,50 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 extension ContentView {
-    @ChartContentBuilder private var points: some ChartContent {
-        ForEach(data, id: \.id) { value in
-            PointMark(
-                x: .value("value", value.x),
-                y: .value("lactate", value.y)
+    @ChartContentBuilder private var barMark: some ChartContent {
+        ForEach(ChartData.aachen) { entry in
+            BarMark(
+                x: .value("Date", entry.date, unit: .month),
+                y: .value("Attendees", entry.attendees)
             )
-            .foregroundStyle(by: .value("pointsstyle", "Points"))
-            .annotation {
-//                Text(verbatim: "\((value.y * lactateModel.yMax).formatted(.number.precision(.fractionLength(2))))")
-//                    .font(.footnote)
+            .foregroundStyle(.orange)
+        }
+    }
+    
+    @ChartContentBuilder private var lineMark: some ChartContent {
+        ForEach(ChartData.aachen) { entry in
+            LineMark(
+                x: .value("Day", entry.date, unit: .month),
+                y: .value("Attendees", entry.attendees)
+            )
+            .foregroundStyle(.red)
+        }
+    }
+    
+    @ChartContentBuilder private var pointMark: some ChartContent {
+        ForEach(ChartData.aachen) { entry in
+            PointMark(
+                x: .value("Day", entry.date, unit: .month),
+                y: .value("Attendees", entry.attendees)
+            )
+            .foregroundStyle(.red)
+        }
+    }
+   
+    @ChartContentBuilder private var series: some ChartContent {
+        ForEach(ChartData.series, id: \.city) { series in
+                Plot {
+            ForEach(series.data) { entry in
+                    BarMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    )
+                    .foregroundStyle(by: .value("City", series.city))
+                }
             }
+            .position(by: .value("City", "series.city"))
         }
     }
 }
