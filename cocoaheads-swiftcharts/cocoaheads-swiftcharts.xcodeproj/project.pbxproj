@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		845551502A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455514F2A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift */; };
+		845551522A1DE26C00C811BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845551512A1DE26C00C811BC /* ContentView.swift */; };
+		845551542A1DE27000C811BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845551532A1DE27000C811BC /* Assets.xcassets */; };
+		845551582A1DE27000C811BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845551572A1DE27000C811BC /* Preview Assets.xcassets */; };
+		845551622A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845551612A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift */; };
+		8455516C2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455516B2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift */; };
+		8455516E2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455516D2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8455515E2A1DE27000C811BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845551442A1DE26C00C811BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8455514B2A1DE26C00C811BC;
+			remoteInfo = "cocoaheads-swiftcharts";
+		};
+		845551682A1DE27000C811BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845551442A1DE26C00C811BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8455514B2A1DE26C00C811BC;
+			remoteInfo = "cocoaheads-swiftcharts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8455514C2A1DE26C00C811BC /* cocoaheads-swiftcharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoaheads-swiftcharts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8455514F2A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsApp.swift; sourceTree = "<group>"; };
+		845551512A1DE26C00C811BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		845551532A1DE27000C811BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845551552A1DE27000C811BC /* cocoaheads_swiftcharts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cocoaheads_swiftcharts.entitlements; sourceTree = "<group>"; };
+		845551572A1DE27000C811BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8455515D2A1DE27000C811BC /* cocoaheads-swiftchartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cocoaheads-swiftchartsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		845551612A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsTests.swift; sourceTree = "<group>"; };
+		845551672A1DE27000C811BC /* cocoaheads-swiftchartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cocoaheads-swiftchartsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8455516B2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsUITests.swift; sourceTree = "<group>"; };
+		8455516D2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftchartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845551492A1DE26C00C811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8455515A2A1DE27000C811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845551642A1DE27000C811BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845551432A1DE26C00C811BC = {
+			isa = PBXGroup;
+			children = (
+				8455514E2A1DE26C00C811BC /* cocoaheads-swiftcharts */,
+				845551602A1DE27000C811BC /* cocoaheads-swiftchartsTests */,
+				8455516A2A1DE27000C811BC /* cocoaheads-swiftchartsUITests */,
+				8455514D2A1DE26C00C811BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8455514D2A1DE26C00C811BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8455514C2A1DE26C00C811BC /* cocoaheads-swiftcharts.app */,
+				8455515D2A1DE27000C811BC /* cocoaheads-swiftchartsTests.xctest */,
+				845551672A1DE27000C811BC /* cocoaheads-swiftchartsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8455514E2A1DE26C00C811BC /* cocoaheads-swiftcharts */ = {
+			isa = PBXGroup;
+			children = (
+				8455514F2A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift */,
+				845551512A1DE26C00C811BC /* ContentView.swift */,
+				845551532A1DE27000C811BC /* Assets.xcassets */,
+				845551552A1DE27000C811BC /* cocoaheads_swiftcharts.entitlements */,
+				845551562A1DE27000C811BC /* Preview Content */,
+			);
+			path = "cocoaheads-swiftcharts";
+			sourceTree = "<group>";
+		};
+		845551562A1DE27000C811BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				845551572A1DE27000C811BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		845551602A1DE27000C811BC /* cocoaheads-swiftchartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				845551612A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift */,
+			);
+			path = "cocoaheads-swiftchartsTests";
+			sourceTree = "<group>";
+		};
+		8455516A2A1DE27000C811BC /* cocoaheads-swiftchartsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8455516B2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift */,
+				8455516D2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift */,
+			);
+			path = "cocoaheads-swiftchartsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8455514B2A1DE26C00C811BC /* cocoaheads-swiftcharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845551712A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftcharts" */;
+			buildPhases = (
+				845551482A1DE26C00C811BC /* Sources */,
+				845551492A1DE26C00C811BC /* Frameworks */,
+				8455514A2A1DE26C00C811BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cocoaheads-swiftcharts";
+			productName = "cocoaheads-swiftcharts";
+			productReference = 8455514C2A1DE26C00C811BC /* cocoaheads-swiftcharts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8455515C2A1DE27000C811BC /* cocoaheads-swiftchartsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845551742A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftchartsTests" */;
+			buildPhases = (
+				845551592A1DE27000C811BC /* Sources */,
+				8455515A2A1DE27000C811BC /* Frameworks */,
+				8455515B2A1DE27000C811BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8455515F2A1DE27000C811BC /* PBXTargetDependency */,
+			);
+			name = "cocoaheads-swiftchartsTests";
+			productName = "cocoaheads-swiftchartsTests";
+			productReference = 8455515D2A1DE27000C811BC /* cocoaheads-swiftchartsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845551662A1DE27000C811BC /* cocoaheads-swiftchartsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845551772A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftchartsUITests" */;
+			buildPhases = (
+				845551632A1DE27000C811BC /* Sources */,
+				845551642A1DE27000C811BC /* Frameworks */,
+				845551652A1DE27000C811BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845551692A1DE27000C811BC /* PBXTargetDependency */,
+			);
+			name = "cocoaheads-swiftchartsUITests";
+			productName = "cocoaheads-swiftchartsUITests";
+			productReference = 845551672A1DE27000C811BC /* cocoaheads-swiftchartsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845551442A1DE26C00C811BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8455514B2A1DE26C00C811BC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8455515C2A1DE27000C811BC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8455514B2A1DE26C00C811BC;
+					};
+					845551662A1DE27000C811BC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8455514B2A1DE26C00C811BC;
+					};
+				};
+			};
+			buildConfigurationList = 845551472A1DE26C00C811BC /* Build configuration list for PBXProject "cocoaheads-swiftcharts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845551432A1DE26C00C811BC;
+			productRefGroup = 8455514D2A1DE26C00C811BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8455514B2A1DE26C00C811BC /* cocoaheads-swiftcharts */,
+				8455515C2A1DE27000C811BC /* cocoaheads-swiftchartsTests */,
+				845551662A1DE27000C811BC /* cocoaheads-swiftchartsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8455514A2A1DE26C00C811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845551582A1DE27000C811BC /* Preview Assets.xcassets in Resources */,
+				845551542A1DE27000C811BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8455515B2A1DE27000C811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845551652A1DE27000C811BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845551482A1DE26C00C811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845551522A1DE26C00C811BC /* ContentView.swift in Sources */,
+				845551502A1DE26C00C811BC /* cocoaheads_swiftchartsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845551592A1DE27000C811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845551622A1DE27000C811BC /* cocoaheads_swiftchartsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845551632A1DE27000C811BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8455516C2A1DE27000C811BC /* cocoaheads_swiftchartsUITests.swift in Sources */,
+				8455516E2A1DE27000C811BC /* cocoaheads_swiftchartsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8455515F2A1DE27000C811BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8455514B2A1DE26C00C811BC /* cocoaheads-swiftcharts */;
+			targetProxy = 8455515E2A1DE27000C811BC /* PBXContainerItemProxy */;
+		};
+		845551692A1DE27000C811BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8455514B2A1DE26C00C811BC /* cocoaheads-swiftcharts */;
+			targetProxy = 845551682A1DE27000C811BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8455516F2A1DE27000C811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845551702A1DE27000C811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		845551722A1DE27000C811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "cocoaheads-swiftcharts/cocoaheads_swiftcharts.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cocoaheads-swiftcharts/Preview Content\"";
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftcharts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845551732A1DE27000C811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "cocoaheads-swiftcharts/cocoaheads_swiftcharts.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cocoaheads-swiftcharts/Preview Content\"";
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftcharts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		845551752A1DE27000C811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftchartsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoaheads-swiftcharts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cocoaheads-swiftcharts";
+			};
+			name = Debug;
+		};
+		845551762A1DE27000C811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftchartsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoaheads-swiftcharts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cocoaheads-swiftcharts";
+			};
+			name = Release;
+		};
+		845551782A1DE27000C811BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftchartsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cocoaheads-swiftcharts";
+			};
+			name = Debug;
+		};
+		845551792A1DE27000C811BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J7HNT49HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.copatec.cocoaheads-swiftcharts.cocoaheads-swiftchartsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cocoaheads-swiftcharts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845551472A1DE26C00C811BC /* Build configuration list for PBXProject "cocoaheads-swiftcharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8455516F2A1DE27000C811BC /* Debug */,
+				845551702A1DE27000C811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845551712A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftcharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845551722A1DE27000C811BC /* Debug */,
+				845551732A1DE27000C811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845551742A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftchartsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845551752A1DE27000C811BC /* Debug */,
+				845551762A1DE27000C811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845551772A1DE27000C811BC /* Build configuration list for PBXNativeTarget "cocoaheads-swiftchartsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845551782A1DE27000C811BC /* Debug */,
+				845551792A1DE27000C811BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845551442A1DE26C00C811BC /* Project object */;
+}
