@@ -17,6 +17,11 @@ extension ContentView {
             Chart {
                 aachenBarMark
             }
+            .chartPlotStyle { plotArea in
+                plotArea.frame(height: 130)
+                    .background(.pink.opacity(0.2))
+                    .border(.pink, width: 1)
+            }
             .chartYAxis {
                 AxisMarks(position: .leading)
             }
@@ -40,6 +45,16 @@ extension ContentView {
                 aachenLineMark
                 aachenPointMark
             }
+
+            //            .chartXAxis {
+            //                AxisMarks { axis in
+            //                    AxisTick()
+            //                        .foregroundStyle(.blue)
+            //                    AxisGridLine()
+            //                        .foregroundStyle(.red)
+            //                    AxisValueLabel("Index \(Double(axis.index), specifier: "%0.0f")")
+            //                }
+            //            }
         }
 
         .frame(height: 350)
@@ -77,7 +92,7 @@ extension ContentView {
 //                    .fill(.red)
 //                    .frame(width: 10, height: 10)
 //            }
-            .symbolSize(1.0)
+//            .symbolSize(100.0)
             .foregroundStyle(.red)
         }
     }
