@@ -13,7 +13,7 @@ extension ContentView {
     // MARK: Aachen
 
     @ViewBuilder var aachenChartBar: some View {
-        GroupBox("Aachen") {
+        GroupBox("Aachen Attendees") {
             Chart {
                 aachenBarMark
             }
@@ -21,7 +21,7 @@ extension ContentView {
     }
 
     @ViewBuilder var aachenChartBarLine: some View {
-        GroupBox("Aachen") {
+        GroupBox("Aachen Attendees") {
             Chart {
                 aachenBarMark
                 aachenLineMark
@@ -30,7 +30,7 @@ extension ContentView {
     }
 
     @ViewBuilder var aachenChartBarLinePoint: some View {
-        GroupBox("Aachen") {
+        GroupBox("Aachen Attendees") {
             Chart {
                 aachenBarMark
                 aachenLineMark
@@ -69,10 +69,113 @@ extension ContentView {
         }
     }
 
+    @ViewBuilder var aachenAreaChart: some View {
+        let curGradient = LinearGradient(
+            gradient: Gradient (
+                colors: [
+                    .yellow.opacity(0.75),
+                    .yellow.opacity(0.5),
+                    .yellow.opacity(0.025),
+                ]
+            ),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+        GroupBox("Aachen Attendees") {
+            Chart {
+                ForEach(ChartData.aachen) { entry in
+                    LineMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(.yellow)
+
+                    AreaMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(curGradient)
+                }
+            }
+        }
+        .frame(height: 350)
+    }
+
+    @ViewBuilder var aachenAreaChartMinMax: some View {
+        let data = ChartData.aachen
+        let attendees = data.map({ $0.attendees })
+        let minValue = attendees.min() ?? 0
+        let maxValue = attendees.max() ?? 0
+
+        GroupBox("Aachen Attendees Min/Max") {
+            Chart {
+                ForEach(data) { entry in
+                    LineMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    )
+                    AreaMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        yStart: .value("Attendees min", minValue),
+                        yEnd: .value("Attendees max", maxValue)
+                    )
+                    .opacity(0.3)
+                    .foregroundStyle(.red)
+                }
+            }
+        }
+        .frame(height: 350)
+    }
+
+    @ViewBuilder var aachenAreaChartAverage: some View {
+        let curGradient = LinearGradient(
+            gradient: Gradient (
+                colors: [
+                    .yellow.opacity(0.75),
+                    .yellow.opacity(0.5),
+                    .yellow.opacity(0.025),
+                ]
+            ),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+
+        let data = ChartData.aachen
+        let attendees = data.map({ $0.attendees })
+        let avgValue = attendees.reduce(0, +) / attendees.count
+
+        GroupBox("Aachen Attendees Average") {
+            Chart {
+                ForEach(data) { entry in
+                    LineMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(.yellow)
+
+                    AreaMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(curGradient)
+                }
+
+                RuleMark(
+                    y: .value("Attendees Average", avgValue)
+                )
+                .lineStyle(StrokeStyle(dash: [5]))
+                .annotation(position: .top, alignment: .leading) {
+                    Text("Average: \(avgValue, format: .number)")
+                        .font(.body)
+                        .foregroundStyle(.gray)
+                }
+                .foregroundStyle(.gray)
+                .opacity(0.6)
+            }
+        }
+        .frame(height: 350)
+    }
+
     // MARK: Cologne
 
     @ViewBuilder var cologneChartBar: some View {
-        GroupBox("Cologne") {
+        GroupBox("Cologne Attendees") {
             Chart {
                 cologneBarMark
             }
@@ -80,7 +183,7 @@ extension ContentView {
     }
 
     @ViewBuilder var cologneChartBarLine: some View {
-        GroupBox("Cologne") {
+        GroupBox("Cologne Attendees") {
             Chart {
                 cologneBarMark
                 cologneLineMark
@@ -89,7 +192,7 @@ extension ContentView {
     }
 
     @ViewBuilder var cologneChartBarLinePoint: some View {
-        GroupBox("Cologne") {
+        GroupBox("Cologne Attendees") {
             Chart {
                 cologneBarMark
                 cologneLineMark
@@ -128,12 +231,79 @@ extension ContentView {
         }
     }
 
-    // MARK: Series
-
-    @ViewBuilder var seriesChart: some View {
-        GroupBox("Sessions") {
+    @ViewBuilder var cologneAreaChart: some View {
+        let curGradient = LinearGradient(
+            gradient: Gradient (
+                colors: [
+                    .purple.opacity(0.75),
+                    .purple.opacity(0.5),
+                    .purple.opacity(0.025),
+                ]
+            ),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+        GroupBox("Cologne Attendees") {
             Chart {
-                series
+                ForEach(ChartData.cologne) { entry in
+                    LineMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(.yellow)
+
+                    AreaMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    ).foregroundStyle(curGradient)
+                }
+            }
+        }
+        .frame(height: 350)
+    }
+
+    @ViewBuilder var cologneAreaChartMinMax: some View {
+        let data = ChartData.cologne
+        let attendees = data.map({ $0.attendees })
+        let minValue = attendees.min() ?? 0
+        let maxValue = attendees.max() ?? 0
+
+        GroupBox("Aachen Attendees Min/Max") {
+            Chart {
+                ForEach(data) { entry in
+                    LineMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        y: .value("Attendees", entry.attendees)
+                    )
+                    AreaMark(
+                        x: .value("Day", entry.date, unit: .month),
+                        yStart: .value("Attendees min", minValue),
+                        yEnd: .value("Attendees max", maxValue)
+                    )
+                    .opacity(0.3)
+                    .foregroundStyle(.red)
+                }
+            }
+        }
+        .frame(height: 350)
+    }
+
+    // MARK: Sessions
+
+    @ViewBuilder var sessionsChart: some View {
+        GroupBox("Sessions by City") {
+            Chart {
+                ForEach(ChartData.series, id: \.city) { series in
+                        Plot {
+                    ForEach(series.data) { entry in
+                            BarMark(
+                                x: .value("Day", entry.date, unit: .month),
+                                y: .value("Attendees", entry.attendees)
+                            )
+                            .foregroundStyle(by: .value("City", series.city))
+                        }
+                    }
+                    .position(by: .value("City", series.city), axis: .horizontal)
+                }
             }
         }.frame(height: 350)
             .chartXAxis {
@@ -145,57 +315,77 @@ extension ContentView {
             }
     }
 
-
-
-    @ChartContentBuilder var areaMark: some ChartContent {
-        let attendees = ChartData.aachen.map({$0.attendees})
-        let minValue = attendees.min() ?? 0
-        let maxValue = attendees.max() ?? 0
-
-        ForEach(ChartData.aachen) { entry in
-            LineMark(
-                x: .value("Day", entry.date, unit: .month),
-                y: .value("Attendees", entry.attendees)
-            )
-            AreaMark(
-                x: .value("Day", entry.date, unit: .month),
-                yStart: .value("Attendees min", minValue),
-                yEnd: .value("Attendees max", maxValue)
-            )
-            .opacity(0.3)
-        }
-        .foregroundStyle(.red)
-    }
-
-    @ChartContentBuilder var ruleMark: some ChartContent {
-        let attendees = ChartData.aachen.map({$0.attendees})
-        let avgValue = attendees.reduce(0, +) / attendees.count
-
-        RuleMark(
-            y: .value("Attendees Average", avgValue)
-        )
-        .lineStyle(StrokeStyle(dash: [5]))
-        .annotation(position: .top, alignment: .leading) {
-            Text("Average: \(avgValue, format: .number)")
-                .font(.body)
-                .foregroundStyle(.gray)
-        }
-        .foregroundStyle(.gray)
-        .opacity(0.6)
-    }
-
-    @ChartContentBuilder var series: some ChartContent {
-        ForEach(ChartData.series, id: \.city) { series in
-                Plot {
-            ForEach(series.data) { entry in
-                    BarMark(
-                        x: .value("Day", entry.date, unit: .month),
-                        y: .value("Attendees", entry.attendees)
-                    )
-                    .foregroundStyle(by: .value("City", series.city))
+    @ViewBuilder var sessionsChartStacked: some View {
+        GroupBox("Sessions by City stacked") {
+            Chart {
+                ForEach(ChartData.series, id: \.city) { series in
+                    Plot {
+                        ForEach(series.data) { entry in
+                            BarMark(
+                                x: .value("Attendees", entry.attendees),
+                                y: .value("Day", entry.date, unit: .month)
+                            )
+                            .foregroundStyle(by: .value("City", series.city))
+                        }
+                        .position(by: .value("City", series.city), axis: .horizontal)
+                    }
                 }
             }
-            .position(by: .value("City", "series.city"))
+            .chartXAxis {
+                AxisMarks(values: .stride(by: .month)) { _ in
+                    AxisTick()
+                    AxisGridLine()
+                    AxisValueLabel(format: .dateTime.month(.abbreviated), centered: true)
+                }
+            }
+        }
+        .frame(height: 350)
+    }
+}
+
+@ViewBuilder var cologneAreaChartAverage: some View {
+    let curGradient = LinearGradient(
+        gradient: Gradient (
+            colors: [
+                .yellow.opacity(0.75),
+                .yellow.opacity(0.5),
+                .yellow.opacity(0.025),
+            ]
+        ),
+        startPoint: .top,
+        endPoint: .bottom
+    )
+
+    let data = ChartData.cologne
+    let attendees = data.map({$0.attendees})
+    let avgValue = attendees.reduce(0, +) / attendees.count
+
+    GroupBox("Cologne Attendees Average") {
+        Chart {
+            ForEach(data) { entry in
+                LineMark(
+                    x: .value("Day", entry.date, unit: .month),
+                    y: .value("Attendees", entry.attendees)
+                ).foregroundStyle(.yellow)
+
+                AreaMark(
+                    x: .value("Day", entry.date, unit: .month),
+                    y: .value("Attendees", entry.attendees)
+                ).foregroundStyle(curGradient)
+            }
+
+            RuleMark(
+                y: .value("Attendees Average", avgValue)
+            )
+            .lineStyle(StrokeStyle(dash: [5]))
+            .annotation(position: .top, alignment: .leading) {
+                Text("Average: \(avgValue, format: .number)")
+                    .font(.body)
+                    .foregroundStyle(.gray)
+            }
+            .foregroundStyle(.gray)
+            .opacity(0.6)
         }
     }
+    .frame(height: 350)
 }

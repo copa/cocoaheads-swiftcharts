@@ -11,10 +11,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            aachenChartBarLinePoint
-            cologneChartBarLinePoint
-            seriesChart
+        ScrollView {
+            VStack {
+                aachenChartBar
+                // aachenChartBarLine
+                // aachenChartBarLinePoint
+
+                cologneChartBar
+                // cologneChartBarLine
+                // cologneChartBarLinePoint
+
+                aachenAreaChart
+                aachenAreaChartMinMax
+                aachenAreaChartAverage
+
+                cologneAreaChart
+                cologneAreaChartMinMax
+                cologneAreaChartAverage
+
+                sessionsChart
+                sessionsChartStacked
+            }
         }
     }
 }
