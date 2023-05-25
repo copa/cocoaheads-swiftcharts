@@ -17,7 +17,11 @@ extension ContentView {
             Chart {
                 aachenBarMark
             }
-        }.frame(height: 350)
+            .chartYAxis {
+                AxisMarks(position: .leading)
+            }
+        }
+        .frame(height: 350)
     }
 
     @ViewBuilder var aachenChartBarLine: some View {
@@ -36,7 +40,9 @@ extension ContentView {
                 aachenLineMark
                 aachenPointMark
             }
-        }.frame(height: 350)
+        }
+
+        .frame(height: 350)
     }
 
     @ChartContentBuilder var aachenBarMark: some ChartContent {
@@ -55,6 +61,7 @@ extension ContentView {
                 x: .value("Day", entry.date, unit: .month),
                 y: .value("Attendees", entry.attendees)
             )
+            .interpolationMethod(.linear)
             .foregroundStyle(.red)
         }
     }
@@ -65,12 +72,18 @@ extension ContentView {
                 x: .value("Day", entry.date, unit: .month),
                 y: .value("Attendees", entry.attendees)
             )
+//            .symbol() {
+//                Rectangle()
+//                    .fill(.red)
+//                    .frame(width: 10, height: 10)
+//            }
+            .symbolSize(1.0)
             .foregroundStyle(.red)
         }
     }
 
     @ViewBuilder var aachenAreaChart: some View {
-        let curGradient = LinearGradient(
+        let yellowGradient = LinearGradient(
             gradient: Gradient (
                 colors: [
                     .yellow.opacity(0.75),
@@ -92,7 +105,7 @@ extension ContentView {
                     AreaMark(
                         x: .value("Day", entry.date, unit: .month),
                         y: .value("Attendees", entry.attendees)
-                    ).foregroundStyle(curGradient)
+                    ).foregroundStyle(yellowGradient)
                 }
             }
         }
@@ -302,7 +315,7 @@ extension ContentView {
                             .foregroundStyle(by: .value("City", series.city))
                         }
                     }
-                    .position(by: .value("City", series.city), axis: .horizontal)
+                    .position(by: .value("City", series.city), axis: .vertical)
                 }
             }
         }.frame(height: 350)
